@@ -4,7 +4,7 @@ import encdec
 
 key = 0b101111100011
 enc = encdec.encrypt("hello", key)
-print(enc)
+encdec.show_encrypted_codepoints(enc)
 
 dec = encdec.decrypt(enc, key)
-print(''.join(dec))
+encdec.show_decrypted_letters(dec)
